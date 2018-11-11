@@ -1,4 +1,4 @@
 # RG64-nuclear-balkan-zombies
 ### Nuclear Balkan Zombies
-Igraci postavljanjem bombi produbljuju put do protivnika i pokusavaju da ih eliminisu. Prilikom eksplozija bombi kutije koje se nalaze na poljima do kojih dolazi eksplozija mogu igracu dodeliti neku od Balkanskih drzavljanstava i time prisvojiti odredjene dodatne sposobnosti.
+Igrači postavljanjem bombi produbljuju put do protivnika i pokušavaju da ih eliminišu. Prilikom eksplozija bombi, kutije koje se nalaze na poljima do kojih dolazi eksplozija mogu igraču dodeliti neku od Balkanskih državljanstava i time prisvojiti određene dodatne sposobnosti.
 
