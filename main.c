@@ -32,7 +32,7 @@ int main(int argc, char** argv)
 	/* other */
 	glClearColor(0.1, 0.1,0.1,0);
 	glEnable(GL_DEPTH_TEST);
-	glLineWidth(2.5);	
+	glLineWidth(1.25);	
 
 	glutMainLoop();
 	
@@ -56,25 +56,74 @@ static void on_display(void)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glColor3f(0,0,1);
 
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
-	gluLookAt(2,2,2,
-			  0,0,0,
-			  0,1,0);        //0,0,25,0,0,0,0,1,0
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    gluLookAt(
+            14, 20, 19,
+            0, 0, 0,
+            0, 1, 0
+        );
+
+    glPushMatrix();
+
+    glColor3f(0.66, 0.66, 0.88);
+    glTranslatef(5, 0-0.50, 5); /*pod*/
+    glScalef(10, 1, 10);
+    glutWireCube(1);
+    
+    glPopMatrix();
+
+    glPushMatrix();
+
+    glColor3f(0.66, 0.66, 0.66);
+    glTranslatef(5, 1-0.50, 0.5); /*zid1*/
+    glScalef(10, 1, 1);
+    glutWireCube(1);
+    
+    glPopMatrix();
+
+    glPushMatrix();
+
+    glColor3f(0.66, 0.66, 0.66);
+    glTranslatef(5, 1-0.50, 0.5+9); /*zid2*/
+    glScalef(10, 1, 1);
+    glutWireCube(1);
+    
+    glPopMatrix();
+
+
+    glPushMatrix();
+
+    glColor3f(0.66, 0.66, 0.66);
+    glTranslatef(0+0.5, 1-0.5, 5); /*zid3*/
+    glScalef(1, 1, 10);
+    glutWireCube(1);
+    
+    glPopMatrix();
+
+
+    glPushMatrix();
+
+    glColor3f(0.66, 0.66, 0.66);
+    glTranslatef(9+0.5, 1-0.5, 5); /*zid4*/
+    glScalef(1, 1, 10);
+    glutWireCube(1);
+    
+    glPopMatrix();
 
 	glBegin(GL_LINES);
 
 		glColor3f (0,0,1);
 		glVertex3f(0,0,0);
-		glVertex3f(8,0,0);
+		glVertex3f(50,0,0);
 
 		glColor3f (0,1,0);
 		glVertex3f(0,0,0);
-		glVertex3f(0,8,0);
+		glVertex3f(0,50,0);
 
 		glColor3f (1,0,0);
 		glVertex3f(0,0,0);
-		glVertex3f(0,0,8);
+		glVertex3f(0,0,50);
 
 	glEnd();
 
